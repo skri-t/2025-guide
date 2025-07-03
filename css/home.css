@@ -36,7 +36,7 @@ header{
     width: 100%;
     height: auto;
     padding: 30px 60px;
-    background: rgb(236, 201, 136);
+    background: rgba(236, 201, 136, 0.918);
     box-sizing: border-box;
     top: 0;
     display: flex;
