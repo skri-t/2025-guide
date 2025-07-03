@@ -32,7 +32,18 @@ h1{
 }
 
 header{
-    padding: 2% 5% 2% 3%;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 30px 60px;
+    background: #fff;
+    box-sizing: border-box;
+    top: 0;
+    display: flex;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 nav{
@@ -60,15 +71,19 @@ nav a:hover{
 
 main{
     padding: 5%;
+    margin: 5%;
 }
 
 section{
     margin-bottom: 64px;
+    margin-top: 20%;
 }
 
 .section-title{
-    font-size: 2rem;
-    
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: #000;
+    padding-bottom: 10px;
 }
 
 .about{
@@ -77,20 +92,22 @@ section{
     flex-wrap: wrap;
 }
 
-/*.about-img{
+.about-img{
     flex: 2;
-    min-width: 300px; 300pxで折り返し
+    min-width: 250px; 
+    width: 70vw;
 }
 
 .about-img img{
-    width: 100%;
+    width: 70%;
     height: auto;
-}*/
+}
 
 .about-txt{
+    margin-top: 5%;
     flex: 1;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 a.about-button{
@@ -103,4 +120,5 @@ a.about-button{
     background-color: var(--secondary-color);
     border-radius: 32px;
     display: block;
+    margin-top: 5%;
 }
