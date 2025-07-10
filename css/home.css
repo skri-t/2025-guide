@@ -76,7 +76,7 @@ nav a:hover{
 
 .top-img img{
     width: 100vw;
-    height: 35vw;
+    height: 512px;
     object-fit: cover;
     align-items: center;
 }
