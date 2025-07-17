@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>TRPG basic guide</title>
 
     <link rel="stylesheet" href="css/home.css">
-    <scrip scr="./js/main.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,9 +17,8 @@
         <nav>
             <h1>TRPG basic guide</h1>
             <ul>
-                <li><a href="#">About</a></li>
                 <li><a href="word.html">Word</a></li>
-                <li><a href="#">Recommend</a></li>
+                <li><a href="#">Scenario</a></li>
             </ul>
         </nav>
     </header>
@@ -35,39 +35,53 @@
                 <div class="arrow"></div>
                 <div class="arrow"></div>
                 <div class="arrow"></div>
-                <span class="txt">scroll</span>
+                <span class="scroll_txt">scroll</span>
             </a>
         </div>
     </div>
 
     <main>
-        
         <section>
 
-
-
-            <div class="about-title">
-                TRPGとは
-            </div>
-
-            <div class="about">
-                <div class="about-img">
-                    <img src="img/seihoukei.webp">
+            
+                <div class="about-title" id="about">
+                    TRPGとは
                 </div>
-                <div class="about-txt">
-                    <p class="txt">
-                        TRPGとは、Table talk Role Playing Game の略称。プレイヤーたちが集まり、会話と想像力を駆使してひとつの物語を作り上げる対話型のRPG。<br>
-                        ゲームマスターを務めるプレイヤー管理の下、自分だけのキャラクターを演じ、物語を作り上げていこう。
-                    </p>
-                    <a href="#" class="about-button">詳しく見る</a>
+
+                <div class="about fade-in">
+                    <div class="about-img">
+                        <img src="img/seihoukei.webp">
+                    </div>
+                    <div class="about-txt">
+                        <p class="txt">
+                            TRPGとは、Table talk Role Playing Game の略称。プレイヤーたちが集まり、会話と想像力を駆使してひとつの物語を作り上げる対話型のRPG。<br>
+                            ゲームマスターを務めるプレイヤー管理の下、自分だけのキャラクターを演じ、物語を作り上げていこう。
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div class="word-title">
                 おさえておきたい用語
             </div>
+            <div class="rurubu">
+                <img src="">
+                <p class="word">
+                <h3>ルールブック/ルルブ</h3>
+                </p>
+                <p class="txt">TRPGを遊ぶために必要な ＜設定＞ ＜ルール＞ ＜データ＞が書かれている本</p>
+            </div>
+            <div class="gm">
+                <img src="" alt="">
+                <p class="word">
+                <h3>GM（ゲームマスター）</h3>
+                </p>
+                <p class="txt">物語を語り、進行する役割の人</p>
+            </div>
+
         </section>
     </main>
-    
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
