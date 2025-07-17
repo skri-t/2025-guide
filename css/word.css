@@ -36,7 +36,7 @@ header{
     width: 100%;
     height: auto;
     padding: 30px 60px;
-    background: rgba(236, 201, 136, 0.918);
+    background: var(--main-color);
     box-sizing: border-box;
     top: 0;
     display: flex;
@@ -59,7 +59,7 @@ nav ul{
 }
 
 nav a{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     font-weight: bold;
 }
