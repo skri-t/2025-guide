@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*初期設定*/
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -11,63 +11,65 @@
     list-style: none;
 }
 
-:root{
-    --main-color: #fafafa;
-    --secondary-color: #4e7eff;
-    --hover-color: rgb(255, 232, 186);
+:root {
+    --main-color: #f5f5f5;
     --bg-color-rgba: 0, 104, 59;
     --font-color: #1a1a1a;
+    --second-color: #e0f1ef;
+    --button-color: #588585;
 }
 
 /*場所ごと*/
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
-    background-color: var(--main-color);
-    font-family: 'Noto Sans JP', sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #594a4e;
+    background-color: #fcfbf8;
 }
 
-h1{
+h1 {
     font-size: 3.5rem;
     color: var(--font-color);
 }
 
-header{
+header {
     position: fixed;
+    top: 0;
     width: 100%;
-    height: auto;
     padding: 30px 60px;
     background: var(--main-color);
     box-sizing: border-box;
-    top: 0;
     display: flex;
     align-items: center;
-
-    display: flex;
     justify-content: space-between;
+    z-index: 1000;
 }
 
-nav{
+nav {
     width: 100%;
-    display: flex; /*横並び*/
+    display: flex;
+    /*横並び*/
     justify-content: space-between;
     align-items: baseline;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 32px;
 }
 
-nav a{
+nav a {
     font-size: 2rem;
     color: black;
     font-weight: bold;
 }
 
-nav a:hover{
+nav a:hover {
     opacity: 0.5;
 }
 
@@ -80,37 +82,38 @@ nav a:hover{
     align-items: center;
 }
 
-.top-img{
-    min-width: 250px; 
+.top-img {
+    min-width: 250px;
     width: 100vw;
     padding: 5% 0 0 0;
 }
 
-.top-img img{
+.top-img img {
     width: 100vw;
     height: auto;
     object-fit: cover;
     align-items: center;
 }
 
-.top-txt{
+.top-txt {
     text-align: center;
     font-size: 1.5vw;
     font-weight: lighter;
     font-family: serif;
     margin-top: 32px;
-
+    color: var(--font-color);
 }
 
 /*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');*/
-.scroll_down{
-    position:absolute;
-    bottom:50px;
-    right:50%;
+.scroll_down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     animation: arrowmove 1s ease-in-out infinite;
-  }
-  
-  .scroll_down a{
+}
+
+.scroll_down a {
     position: absolute;
     left: -24px;
     bottom: 30px;
@@ -122,9 +125,9 @@ nav a:hover{
     width: 24px;
     height: 24px;
     text-decoration: none;
-  }
-  
-  .scroll_txt {
+}
+
+.scroll_txt {
     display: block;
     margin-top: 70px;
     margin-left: -14px;
@@ -133,114 +136,210 @@ nav a:hover{
     text-transform: uppercase;
     white-space: nowrap;
     letter-spacing: 2px;
-  }
-  
-  .arrow {
+}
+
+.arrow {
     position: absolute;
     width: 28px;
     height: 5px;
     opacity: 0;
     transform: scale3d(0.5, 0.5, 0.5);
     animation: move 3s ease-out infinite;
-  }
-  
-  .arrow:first-child {
+}
+
+.arrow:first-child {
     animation: move 3s ease-out 1s infinite;
-  }
-  
-  .arrow:nth-child(2) {
+}
+
+.arrow:nth-child(2) {
     animation: move 3s ease-out 2s infinite;
-  }
-  
-  .arrow:before,
-  .arrow:after {
+}
+
+.arrow:before,
+.arrow:after {
     content: ' ';
     position: absolute;
     top: 0;
     height: 100%;
     width: 51%;
     background: #000;
-  }
-  
-  .arrow:before {
+}
+
+.arrow:before {
     left: 0;
     transform: skew(0deg, 30deg);
-  }
-  
-  .arrow:after {
+}
+
+.arrow:after {
     right: 0;
     width: 50%;
     transform: skew(0deg, -30deg);
-  }
-  
-  @keyframes move {
-    25% { opacity: 1; }
-    33% { opacity: 1; transform: translateY(30px); }
-    67% { opacity: 1; transform: translateY(40px); }
-    100% { opacity: 0; transform: translateY(55px) scale3d(0.5, 0.5, 0.5); }
-  }
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
 
 
-main{
+main {
+    margin-top: 120px;
     padding: 5%;
-    margin: 12%;
 }
 
-section{
+section {
     margin-bottom: 64px;
-}
-
-.about-title{
-    font-size: 2vw;
-    text-align: center;
-    border-bottom: var(--font-color);
-    padding-bottom: 30px;
-    margin-top: 80px;
-}
-
-.about{
-    display: flex;
-    justify-content: space-around;
-    gap: 32px;
-    flex-wrap: wrap;
-    margin-bottom: 30%;
-}
-
-.about-img{
-    flex: 1.2;
-    min-width: 250px; 
-    width: 100vw;
-}
-
-.about-img img{
-    width: 90%;
-    height: auto;
-}
-
-.about-txt{
-    margin-top: 7%;
-    flex: 1;
-    text-align: left;
-    font-size: 2rem;
-    color: var(--font-color);
-}
-
-
-
-.word-title{
-    font-size: 3rem;
-    text-align: center;
-    border-bottom: #000;
-    padding-bottom: 10px;
 }
 
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .fade-in.show {
+}
+
+.fade-in.show {
     opacity: 1;
     transform: translateY(0);
-  }
+}
+
+.about-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    /* 親で中央寄せ */
+}
+
+.about-title span {
+    display: inline-block;
+    border-bottom: 3px solid #594a4e;
+    /* 文字幅に合わせた線 */
+    padding-bottom: 0.5rem;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    /* 画像と本文の間 */
+    margin: 0 auto 8rem auto;
+    /* セクションの上下マージン */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    /* 全体の最大幅を制限 */
+    width: 90%;
+    /* 画面幅に応じて調整 */
+}
+
+
+.about-img {
+    flex: 1.2;
+    min-width: 250px;
+    width: 100vw;
+}
+
+.about-img img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.about-txt {
+    margin-top: 3%;
+    flex: 1.2;
+    text-align: left;
+    color: #594a4e;
+}
+
+.about-txt .txt {
+    font-size: 1.5rem;
+    line-height: 1.9;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+
+.word-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 24rem 0 5rem;
+    text-align: center;
+    /* 親で中央寄せ */
+}
+
+.word-title span {
+    display: inline-block;
+    border-bottom: 3px solid #594a4e;
+    /* 文字幅に合わせた線 */
+    padding-bottom: 0.5rem;
+}
+
+.word-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2列 */
+    gap: 30px;
+    /* カードの間隔 */
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+}
+
+.word-list>div {
+    background: var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.word-list .word {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.word-list .word,
+.word-list .txt {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.word-button {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.nav-button {
+    display: inline-block;
+    background: var(--button-color);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background: #a1b9b9;
+    transform: scale(1.05);
+}
