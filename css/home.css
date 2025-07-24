@@ -393,7 +393,7 @@ section {
     }
 
     .about-img img {
-        width: 100%;
+        width: 80%;
         max-width: 400px;
         height: auto;
         border-radius: 8px;
