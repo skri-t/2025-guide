@@ -394,7 +394,7 @@ section {
 
 .points {
     font-size: 1.5rem;
-    color: #555;
+    color: var(--button-color);
 }
 
 /* スマホ（幅600px以下）のスタイル */
