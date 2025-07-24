@@ -379,17 +379,23 @@ section {
     .word-title {
         font-size: 2rem;
     }
-        .about {
+    
+    .about {
         display: flex;
         flex-direction: column; /* 縦並び */
-        align-items: center;
+        align-items: center; /* 中央寄せ */
+        justify-content: center;
         text-align: center;
-        gap: 16px; /* 画像とテキストの間隔 */
+        gap: 16px;
+        width: 100%;
+        margin: 0 auto;
         padding: 0 16px;
+        box-sizing: border-box;
     }
 
     .about-img img {
         width: 100%;
+        max-width: 400px;
         height: auto;
         border-radius: 8px;
     }
@@ -397,5 +403,6 @@ section {
     .about-txt {
         font-size: 1.4rem;
         line-height: 1.6;
+        max-width: 600px;
     }
 }
