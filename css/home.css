@@ -393,6 +393,12 @@ section {
         padding: 0px 16px;
     }
 
+    .about-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
     .about-img img {
         width: 80%;
         max-width: 400px;
@@ -403,6 +409,8 @@ section {
     .about-txt {
         font-size: 1.4rem;
         line-height: 1.6;
-        max-width: 600px;
+        max-width: 600px
+        width: 100%;
+        text-align: center;
     }
 }
