@@ -379,4 +379,23 @@ section {
     .word-title {
         font-size: 2rem;
     }
+        .about {
+        display: flex;
+        flex-direction: column; /* 縦並び */
+        align-items: center;
+        text-align: center;
+        gap: 16px; /* 画像とテキストの間隔 */
+        padding: 0 16px;
+    }
+
+    .about-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .about-txt {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
 }
