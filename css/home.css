@@ -390,6 +390,7 @@ section {
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
+        padding: 0 16px 0 16px;
     }
 
     .about-img img {
