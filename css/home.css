@@ -344,6 +344,59 @@ section {
     transform: scale(1.05);
 }
 
+.scenario-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 24rem 0 5rem;
+    text-align: center;
+}
+
+.scenario-title span {
+    display: inline-block;
+    border-bottom: 3px solid #594a4e;
+    /* 文字幅に合わせた線 */
+    padding-bottom: 0.5rem;
+}
+
+.scenario-card {
+    background: var(--main-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.tags {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.catchcopy {
+    font-style: italic;
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.summary {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.points {
+    font-size: 1.5rem;
+    color: #555;
+}
+
 /* スマホ（幅600px以下）のスタイル */
 @media (max-width: 600px) {
     header {
@@ -359,15 +412,18 @@ section {
     }
 
     h1 {
-        font-size: 2.4rem; /* ヘッダーのタイトルを少し小さく */
+        font-size: 2.4rem;
+        /* ヘッダーのタイトルを少し小さく */
     }
 
     .top {
-        height: 25vh; /* 高さを調整 */
+        height: 25vh;
+        /* 高さを調整 */
     }
 
     .word-list {
-        grid-template-columns: 1fr; /* カードを1列に */
+        grid-template-columns: 1fr;
+        /* カードを1列に */
         gap: 16px;
     }
 
@@ -379,11 +435,13 @@ section {
     .word-title {
         font-size: 2rem;
     }
-    
+
     .about {
         display: flex;
-        flex-direction: column; /* 縦並び */
-        align-items: center; /* 中央寄せ */
+        flex-direction: column;
+        /* 縦並び */
+        align-items: center;
+        /* 中央寄せ */
         justify-content: center;
         text-align: center;
         gap: 16px;
@@ -398,7 +456,7 @@ section {
         display: flex;
         justify-content: center;
     }
-    
+
     .about-img img {
         width: 80%;
         max-width: 400px;
@@ -409,10 +467,23 @@ section {
     .about-txt {
         font-size: 1.4rem;
         line-height: 1.6;
-        max-width: 600px
+        max-width: 600px;
         width: 100%;
         text-align: center;
-        border: 2px solid #ccc; /* 枠線を追加 */
-        padding: 16px;          /* 枠とテキストの間に余白 */
     }
+
+    .scroll_down {
+        display: none;
+    }
+
+        .scenario-card {
+        padding: 16px;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .summary {
+        font-size: 1.3rem;
+    }
+
 }
